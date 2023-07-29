@@ -5,7 +5,7 @@ public class MapController : MonoBehaviour
 {
     public GameObject mapPanel; // The panel holding your map
     public GameObject buttonPrefab; // The prefab for your screen buttons
-    public CameraController cameraController; // The camera controller from your game
+    public CameraController cameraController; 
 
     private Button[] screenButtons;
 
