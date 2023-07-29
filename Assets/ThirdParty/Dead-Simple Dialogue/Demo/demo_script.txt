@@ -1,0 +1,34 @@
+BEGIN
+
+TITLE: PART 1
+
+NAME: Alex
+
+Hello there! My name is Alex.
+I hope you love pancakes!
+Because I sure as heck love 'em myself.
+/
+
+NAME: JASON
+
+Oh boi, I hate those!
+You suck! 
+LOL
+/ 
+/ 
+
+TITLE: PART 2
+
+NAME: JASON
+
+AGGHHH screw you!!!
+I knew you would sneak me pancakes! 
+/ 
+
+NAME: Alex
+
+Teeheehee
+/ 
+/ 
+
+END

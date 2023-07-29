@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2a9460aae1c4420a415466d1db880f, type: 3}
+  m_Name: PART2
+  m_EditorClassIdentifier: 
+  Title: PART 2
+  Exchanges:
+  - Lines:
+    - Text: AGGHHH screw you!!!
+      Guid:
+        Value: 618b59f0-e4f2-4c4e-a151-9c1876a7ab11
+    - Text: I knew you would sneak me pancakes!
+      Guid:
+        Value: 4eca01c9-da8a-44d7-89b3-b7140be7033c
+    Speaker: JASON
+    Guid:
+      Value: 522981b6-59bc-4684-a9da-f436478a4d58
+  - Lines:
+    - Text: Teeheehee
+      Guid:
+        Value: ea68e20b-a284-4134-9e29-1fd07f4f5e03
+    Speaker: Alex
+    Guid:
+      Value: 9602c272-6233-40fd-9b46-4153eea1ba3e
+  Guid:
+    Value: 2c122add-73bf-4c7a-9894-39b07b996fb0
