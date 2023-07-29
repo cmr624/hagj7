@@ -45,6 +45,7 @@ namespace IndieMarc.TopDown
 
         public UnityEvent OnMapPressed;
         public UnityEvent OnInventoryPressed;
+        public UnityEvent OnActionPressed;
 
         public ToggleGroup UIToggleGroup;
 
@@ -113,6 +114,11 @@ namespace IndieMarc.TopDown
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
                     UIToggleGroup.SetAllTogglesOff();
+                }
+
+                if (controls.GetActionDown())
+                {  
+                    OnActionPressed?.Invoke();
                 }
             }
 
