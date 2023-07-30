@@ -203,5 +203,13 @@ namespace Dossamer.Dialogue
                 DialogueManager.Instance.UpdateDialogue();
             }
         }
+        
+        public void ProgressDialogueLegacyInput()
+        {
+            if (!IsProgressionFrozen && DialogueManager.Instance.GetIsDialogueActive())
+            {
+                DialogueManager.Instance.UpdateDialogue();
+            }
+        }
     }
 }
