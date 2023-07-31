@@ -47,28 +47,52 @@ namespace IndieMarc.TopDown
         public UnityEvent OnInventoryPressed;
         public UnityEvent OnActionPressed;
 
-        public ToggleGroup UIToggleGroup;
+        public Sprite PlayerSprite;
+        public Sprite JeepSprite;
+        public Sprite PlaneSprite;
+        public Sprite BoatSprite;
 
+        public PlayerSprite CurrentPlayerSprite;
+        
+        
         private static Dictionary<int, PlayerCharacter> character_list = new Dictionary<int, PlayerCharacter>();
-
+        
+        private SpriteRenderer sr;
         void Awake()
         {
             character_list[player_id] = this;
             rigid = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             auto_order = GetComponent<AutoOrderLayer>();
+            sr = GetComponent<SpriteRenderer>();
             hp = max_hp;
-            UIToggleGroup.SetAllTogglesOff();
         }
 
         void OnDestroy()
         {
             character_list.Remove(player_id);
         }
+        
 
-        void Start()
+        public void ChangeSprite(PlayerSprite type)
         {
-
+           CurrentPlayerSprite = type;
+            if (type == global::PlayerSprite.Player)
+            {
+               sr.sprite = PlayerSprite;
+            }
+            else if (type == global::PlayerSprite.Jeep)
+            {
+                sr.sprite = JeepSprite;
+            }
+            else if (type == global::PlayerSprite.Plane)
+            {
+                sr.sprite = PlaneSprite;
+            }
+            else if (type == global::PlayerSprite.Boat)
+            {
+                sr.sprite = BoatSprite;
+            }
         }
 
         //Handle physics
@@ -113,7 +137,6 @@ namespace IndieMarc.TopDown
 
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    UIToggleGroup.SetAllTogglesOff();
                 }
 
                 if (controls.GetActionDown())
@@ -127,6 +150,20 @@ namespace IndieMarc.TopDown
                 lookat = move.normalized;
             if (Mathf.Abs(lookat.x) > 0.02)
                 side = Mathf.Sign(lookat.x);
+            
+            // Rotate sprite based on direction
+            if (move_input != Vector2.zero)
+            {
+                float angle = Mathf.Atan2(move_input.y, move_input.x) * Mathf.Rad2Deg - 90;
+                if (CurrentPlayerSprite == global::PlayerSprite.Player)
+                {
+                    transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                }
+                else
+                {
+                    transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+                }
+            }
             
         }
 

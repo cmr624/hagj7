@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Banks:
   - Master
-  Scene: SampleScene
+  Scene: CubaScene
   MinLoadingTime: 1
 --- !u!4 &941118375
 Transform:

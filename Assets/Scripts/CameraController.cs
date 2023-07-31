@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using IndieMarc.TopDown;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -11,6 +12,7 @@ public class CameraController : MonoBehaviour
     {
         public Rect rect;
         public List<int> adjacentScreens; // We're storing indices now
+        public MapTileData data;
     }
 
     public Screen[] screens;
@@ -24,11 +26,14 @@ public class CameraController : MonoBehaviour
         for (int i = 0; i < sprites.Length; i++)
         {
             Bounds bounds = sprites[i].GetComponent<SpriteRenderer>().bounds;
+            GameObject sprite = sprites[i];
+            MapTileData data = sprite.GetComponent<MapTileData>();
+            
             Vector2 position = sprites[i].transform.position; // The center of the sprite
             Vector2 size = bounds.size;
             // Align the rectangle with the sprite
             Rect rect = new Rect(position.x - size.x / 2, position.y - size.y / 2, size.x, size.y); 
-            screens[i] = new Screen { rect = rect, adjacentScreens = new List<int>() };
+            screens[i] = new Screen { rect = rect, adjacentScreens = new List<int>(), data = data};
         }
 
         for (int i = 0; i < screens.Length; i++)
@@ -78,6 +83,47 @@ public class CameraController : MonoBehaviour
     }
 
 
+    public void GoToScreenByID(string id)
+    {
+        StartCoroutine(TransitionToScreenByID(id));
+        
+    }
+
+    public IEnumerator TransitionToScreenByID(string id)
+    {
+        isTransitioning = true;
+        yield return new WaitForSeconds(waitTime);
+        
+        // based on the ID, find the screen in the screens array that has the id in the data component
+        Screen targetScreen = System.Array.Find(screens, screen => screen.data.ID == id);
+    
+        // Check if the screen with the provided id exists.
+        if(targetScreen.Equals(default(Screen)))
+        {
+            Debug.LogError("Screen with the provided id does not exist.");
+            yield break;
+        }
+        
+        // Move the camera to the center of the new screen.
+        transform.position = new Vector3(targetScreen.rect.center.x, targetScreen.rect.center.y, transform.position.z);
+    
+        player.position = new Vector3(targetScreen.rect.center.x, targetScreen.rect.center.y, player.position.z);
+        player.GetComponent<PlayerCharacter>().ChangeSprite(targetScreen.data.PlayerSprite);
+        
+        isTransitioning = false; 
+        currentScreen = GetCurrentScreenIndex();
+        
+        // the move the camera to the center of the new screen.
+        
+    }
+
+    public void ResetPlayer()
+    {
+        // get the current screen
+        // get the center point of that screen
+        // move the player transform to this new place
+    }
+    
     public IEnumerator TransitionToScreen(int screenIndex)
     {
         isTransitioning = true;
@@ -87,6 +133,7 @@ public class CameraController : MonoBehaviour
         // Move the camera to the center of the new screen
         transform.position = new Vector3(screens[screenIndex].rect.center.x, screens[screenIndex].rect.center.y, transform.position.z);
 
+        player.GetComponent<PlayerCharacter>().ChangeSprite(screens[screenIndex].data.PlayerSprite);
         isTransitioning = false;
     }
 
