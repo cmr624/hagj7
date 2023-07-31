@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{65ba2f39-04c7-4178-8e56-734577e8b438}">
+		<property name="name">
+			<value>PercOnOff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{90bd08e5-bcb3-41d5-ba4b-2c63a709b5b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{62dd520d-7e8e-4d4d-a5f7-29ebb3928948}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{62dd520d-7e8e-4d4d-a5f7-29ebb3928948}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.2199999988079071</value>
+		</property>
+	</object>
+</objects>

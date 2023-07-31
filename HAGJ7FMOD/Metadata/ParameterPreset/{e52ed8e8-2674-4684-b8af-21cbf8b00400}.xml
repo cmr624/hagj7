@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{e52ed8e8-2674-4684-b8af-21cbf8b00400}">
+		<property name="name">
+			<value>MelodyOnOff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{90bd08e5-bcb3-41d5-ba4b-2c63a709b5b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c4f7607c-e195-4d73-804c-11c3950d7464}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c4f7607c-e195-4d73-804c-11c3950d7464}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.26999998092651367</value>
+		</property>
+	</object>
+</objects>

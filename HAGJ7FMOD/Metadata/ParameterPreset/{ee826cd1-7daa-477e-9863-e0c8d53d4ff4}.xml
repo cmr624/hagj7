@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ee826cd1-7daa-477e-9863-e0c8d53d4ff4}">
+		<property name="name">
+			<value>RhythmSectionOnOff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{90bd08e5-bcb3-41d5-ba4b-2c63a709b5b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d647276c-c586-45b9-a930-483a5a7b64a7}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d647276c-c586-45b9-a930-483a5a7b64a7}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.23999999463558197</value>
+		</property>
+	</object>
+</objects>
