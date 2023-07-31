@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b0ad88ed-c4ca-4ee2-b9a8-b9d4a05101cf}">
+		<property name="assetPath">
+			<value>lowenergysalsa perc .wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>21.573038548752834</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9ed13186-8d8b-4839-b1cd-98bfaa467ed1}</destination>
+		</relationship>
+	</object>
+</objects>

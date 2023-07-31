@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d6b555a6-4412-46e1-b1aa-68abea7d9762}">
+		<property name="assetPath">
+			<value>UIARP1_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.60952380952380958</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9ed13186-8d8b-4839-b1cd-98bfaa467ed1}</destination>
+		</relationship>
+	</object>
+</objects>

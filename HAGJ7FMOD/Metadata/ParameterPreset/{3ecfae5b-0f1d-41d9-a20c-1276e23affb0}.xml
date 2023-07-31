@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{3ecfae5b-0f1d-41d9-a20c-1276e23affb0}">
+		<property name="name">
+			<value>SFXLoopOnOff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{90bd08e5-bcb3-41d5-ba4b-2c63a709b5b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{be8050db-a58a-46cc-b88f-a70129adf451}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{be8050db-a58a-46cc-b88f-a70129adf451}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

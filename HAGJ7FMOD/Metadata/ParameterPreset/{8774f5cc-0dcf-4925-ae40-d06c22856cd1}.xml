@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8774f5cc-0dcf-4925-ae40-d06c22856cd1}">
+		<property name="name">
+			<value>MusicOnOff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{90bd08e5-bcb3-41d5-ba4b-2c63a709b5b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c621fa80-9fb8-4b92-9901-c814b56a291a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c621fa80-9fb8-4b92-9901-c814b56a291a}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>0.37999999523162842</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{d662d561-1abc-4408-994e-facc3a99f3e5}</destination>
+		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{d662d561-1abc-4408-994e-facc3a99f3e5}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>
