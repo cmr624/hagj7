@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using CubaJam.Audio;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -80,6 +81,7 @@ namespace IndieMarc.TopDown
             if (type == global::PlayerSprite.Player)
             {
                sr.sprite = PlayerSprite;
+               //SfxAudioEventDriver.PlayClip("Human");
             }
             else if (type == global::PlayerSprite.Jeep)
             {
@@ -88,10 +90,13 @@ namespace IndieMarc.TopDown
             else if (type == global::PlayerSprite.Plane)
             {
                 sr.sprite = PlaneSprite;
+                
+               //SfxAudioEventDriver.PlayClip("Plane");
             }
             else if (type == global::PlayerSprite.Boat)
             {
                 sr.sprite = BoatSprite;
+               //SfxAudioEventDriver.PlayClip("collect");
             }
         }
 

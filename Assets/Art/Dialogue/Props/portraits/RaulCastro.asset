@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2a9460aae1c4420a415466d1db880f, type: 3}
+  m_Name: RaulCastro
+  m_EditorClassIdentifier: 
+  Title: Raul Castro
+  Exchanges:
+  - Lines:
+    - Text: Raul Castro was, until recently, the head of state of Cuba, defense minister,
+        and revolutionary and younger brother of Fidel Castro.
+      Guid:
+        Value: 73e5f390-ee39-4fc2-8746-bb879efb729c
+    - Text: There is much conjecture on when exactly Fidel Castro described himself
+        as a Marxist, and many blamed Raul and Che for their influence on Fidel's
+        eventual embrace of communism.
+      Guid:
+        Value: 73e5f390-ee39-4fc2-8746-bb879efb729c
+    Speaker: new portrait discovered!
+    Guid:
+      Value: 0cff69e9-fe1f-4a82-8a12-3e9d850009ad
+  Guid:
+    Value: e87b7a09-c38e-4496-ba29-afb0d6357045

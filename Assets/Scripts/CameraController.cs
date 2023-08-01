@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using IndieMarc.TopDown;
+using TMPro;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -110,6 +111,7 @@ public class CameraController : MonoBehaviour
         player.position = new Vector3(targetScreen.rect.center.x, targetScreen.rect.center.y, player.position.z);
         player.GetComponent<PlayerCharacter>().ChangeSprite(targetScreen.data.PlayerSprite);
         
+        UpdateScreenText(targetScreen);
         isTransitioning = false; 
         currentScreen = GetCurrentScreenIndex();
         
@@ -123,6 +125,15 @@ public class CameraController : MonoBehaviour
         // get the center point of that screen
         // move the player transform to this new place
     }
+
+    // public variable for text mesh pro text field
+    public TextMeshProUGUI screenText;
+    
+    public void UpdateScreenText(Screen screen)
+    {
+        // update the tmp pro text field with the screen's data title
+        screenText.text = screen.data.MapDisplayName;
+    }
     
     public IEnumerator TransitionToScreen(int screenIndex)
     {
@@ -131,9 +142,12 @@ public class CameraController : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         // Move the camera to the center of the new screen
-        transform.position = new Vector3(screens[screenIndex].rect.center.x, screens[screenIndex].rect.center.y, transform.position.z);
+        Screen screen = screens[screenIndex];
+        transform.position = new Vector3(screen.rect.center.x, screen.rect.center.y, transform.position.z);
 
-        player.GetComponent<PlayerCharacter>().ChangeSprite(screens[screenIndex].data.PlayerSprite);
+        player.GetComponent<PlayerCharacter>().ChangeSprite(screen.data.PlayerSprite);
+        UpdateScreenText(screen);
+        
         isTransitioning = false;
     }
 

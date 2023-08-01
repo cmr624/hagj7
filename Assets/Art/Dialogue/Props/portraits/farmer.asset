@@ -10,21 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d2a9460aae1c4420a415466d1db880f, type: 3}
-  m_Name: CubanFlag
+  m_Name: farmer
   m_EditorClassIdentifier: 
-  Title: Cuban Flag
+  Title: Raul Castro
   Exchanges:
   - Lines:
-    - Text: 'The national flag of Cuba!  First conceived in the 19th century by anti-spanish
-        exiles: three blue stripes represent the Spanish- dominated Cuba, and two
-        white stripes represent the native Cuban tradition.  '
+    - Text: The agrarian reforms passed after the revolution in Cuba sought to break
+        up large landholdings and redistribute land to those farmers who worked it.
       Guid:
         Value: 73e5f390-ee39-4fc2-8746-bb879efb729c
-    - Text: 'The flag was first carried in Cuba in 1850.  as a symbol of resilience,
-        prosperity through love and justice. '
-      Guid:
-        Value: 66179da6-e4ef-4562-bae0-b71d86b8aafc
-    Speaker: New Item Discovered!
+    Speaker: new portrait discovered!
     Guid:
       Value: 0cff69e9-fe1f-4a82-8a12-3e9d850009ad
   Guid:

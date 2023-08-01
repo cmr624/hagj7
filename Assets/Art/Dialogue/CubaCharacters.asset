@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: CubaCharacters
   m_EditorClassIdentifier: 
   _characterList:
-  - Name: New Item Discovered!
+  - Name: new item discovered!
     Photo: {fileID: 2800000, guid: 6cc5103edc9f0dd4f80e8274c73dfeac, type: 3}
-  - Name: Fidel Castro
-    Photo: {fileID: 2800000, guid: e1044d260b869544d8b6bb1c28efc3f7, type: 3}
+  - Name: new portrait discovered!
+    Photo: {fileID: 2800000, guid: 0b21726b8a5314c0db4c9578fd5c1dad, type: 3}
+  - Name: key event discovered!
+    Photo: {fileID: 2800000, guid: 59073de517fff488e97ff282adb5ef1e, type: 3}

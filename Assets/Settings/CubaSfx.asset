@@ -21,3 +21,51 @@ MonoBehaviour:
         Data3: -818356594
         Data4: -1365174490
       Path: event:/SFX/FastTravel
+  - Action: Plane
+    SfxClip:
+      Guid:
+        Data1: 1306062841
+        Data2: 1272913573
+        Data3: -1257709177
+        Data4: -2029975914
+      Path: event:/SFX/AirplaneLoop
+  - Action: Human
+    SfxClip:
+      Guid:
+        Data1: -1081356583
+        Data2: 1110184507
+        Data3: -145428832
+        Data4: -1499601076
+      Path: event:/SFX/HumanLoop
+  - Action: Boat
+    SfxClip:
+      Guid:
+        Data1: 1361457890
+        Data2: 1291867495
+        Data3: -561737571
+        Data4: -1067170717
+      Path: event:/SFX/RowLoop
+  - Action: collect
+    SfxClip:
+      Guid:
+        Data1: 1372052616
+        Data2: 1127296431
+        Data3: 1715054503
+        Data4: -1859145401
+      Path: event:/SFX/UIArps
+  - Action: itext
+    SfxClip:
+      Guid:
+        Data1: 28021707
+        Data2: 1178117315
+        Data3: -354383994
+        Data4: -487249442
+      Path: event:/SFX/UI3
+  - Action: next
+    SfxClip:
+      Guid:
+        Data1: -27077626
+        Data2: 1241949239
+        Data3: -350520941
+        Data4: 2016423367
+      Path: event:/SFX/UI1

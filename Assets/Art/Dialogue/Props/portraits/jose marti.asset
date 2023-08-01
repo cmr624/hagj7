@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2a9460aae1c4420a415466d1db880f, type: 3}
+  m_Name: jose marti
+  m_EditorClassIdentifier: 
+  Title: Raul Castro
+  Exchanges:
+  - Lines:
+    - Text: Jose Marti was a national figure before Castro's rise to power, ought
+        for Cuba's freedom from Spain. He was an iconic national figure, poet, and
+        activist.
+      Guid:
+        Value: 73e5f390-ee39-4fc2-8746-bb879efb729c
+    - Text: 'I Have a White Rose to Tend (Verse XXXIX) I have a white rose to tend
+        In July as in January; I give it to the true friend Who offers his frank
+        hand to me. And for the cruel one whose blows Break the heart by which I
+        live, Thistle nor thorn do I give: For him, too, I have a white rose.'
+      Guid:
+        Value: 73e5f390-ee39-4fc2-8746-bb879efb729c
+    - Text: " Cultivo una rosa blanca, En julio como en enero, Para el amigo sincero
+        Que me da su mano franca. Y para el cruel que me arranca El coraz\xF3n con
+        que vivo, Cardo ni oruga cultivo: Cultivo la rosa blanca. "
+      Guid:
+        Value: 73e5f390-ee39-4fc2-8746-bb879efb729c
+    - Text: <3
+      Guid:
+        Value: 73e5f390-ee39-4fc2-8746-bb879efb729c
+    Speaker: new portrait discovered!
+    Guid:
+      Value: 0cff69e9-fe1f-4a82-8a12-3e9d850009ad
+  Guid:
+    Value: e87b7a09-c38e-4496-ba29-afb0d6357045
